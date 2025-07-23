@@ -17,7 +17,7 @@ h1 {
 }
 
 .container, .thankyou {
-  width: 100%;
+  width: 90%;
   max-width: 400px;
   background: rgba(0,0,0,0.4);
   border-radius: 12px;
@@ -38,7 +38,7 @@ input, textarea {
 
 button {
   display: block;
-  width: 100%;
+  width: 90%;
   padding: 12px;
   background: none;
   border: 2px solid #ffcc66;
