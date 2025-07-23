@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Analytics</title>
+<style>
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to bottom, #222831, #2D4059, #FF5722, #EEEEEE);
+    color: #EEEEEE;
+    padding: 20px;
+    text-align: center;
+  }
+  h1 {
+    color: #FF5722;
+    text-shadow: 0 0 8px #FF5722;
+    margin-bottom: 30px;
+    font-size: 32px;
+  }
+  h2 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: #EEEEEE;
+    text-shadow: 0 0 5px #FF5722;
+  }
+
+  /* Bar chart container */
+  .chart {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: 200px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 40px;
+  }
+  .bar {
+    width: 30px;
+    background: #222831;
+    border-radius: 4px 4px 0 0;
+    box-shadow: 0 0 6px #2D4059;
+  }
+  .day-labels {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  /* Table for coordinates */
+  table {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background: rgba(255,255,255,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  th, td {
+    border: 1px solid rgba(255,255,255,0.2);
+    padding: 10px;
+    font-size: 14px;
+  }
+  th {
+    background: #2D4059;
+    color: #EEEEEE;
+  }
+  td {
+    color: #FFFFFF;
+  }
+</style>
+</head>
+<body>
+
+<h1>📈 Analytics</h1>
+
+<h2>Daily Extract</h2>
+<div class="chart">
+  <div class="bar" style="height: 50%;"></div> <!-- Monday -->
+  <div class="bar" style="height: 70%;"></div> <!-- Tuesday -->
+  <div class="bar" style="height: 40%;"></div> <!-- Wednesday -->
+  <div class="bar" style="height: 90%;"></div> <!-- Thursday -->
+  <div class="bar" style="height: 60%;"></div> <!-- Friday -->
+  <div class="bar" style="height: 80%;"></div> <!-- Saturday -->
+  <div class="bar" style="height: 30%;"></div> <!-- Sunday -->
+</div>
+<div class="day-labels">
+  <span>Mon</span>
+  <span>Tue</span>
+  <span>Wed</span>
+  <span>Thu</span>
+  <span>Fri</span>
+  <span>Sat</span>
+  <span>Sun</span>
+</div>
+
+<h2>Coordinate-wise Extraction</h2>
+<table>
+  <tr>
+    <th>Coordinates</th>
+    <th>Extracted (kg)</th>
+  </tr>
+  <tr>
+    <td>12.34, -45.67</td>
+    <td>23.4</td>
+  </tr>
+  <tr>
+    <td>56.78, -12.34</td>
+    <td>18.9</td>
+  </tr>
+  <tr>
+    <td>78.90, 12.34</td>
+    <td>34.2</td>
+  </tr>
+  <tr>
+    <td>23.45, -67.89</td>
+    <td>12.7</td>
+  </tr>
+</table>
+
+</body>
+</html>
