@@ -16,14 +16,16 @@ h1 {
   text-align: center;
 }
 
-.container, .thankyou {
-  width: 90%;
+.container {
+  width: 100%;
   max-width: 400px;
   background: rgba(0,0,0,0.4);
   border-radius: 12px;
   padding: 20px;
   box-shadow: 0 0 10px #ff9900;
+  box-sizing: border-box;
 }
+
 
 input, textarea {
   width: 90%;
