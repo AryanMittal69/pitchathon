@@ -36,7 +36,9 @@ input, textarea {
   background: rgba(255,255,255,0.1);
   color: #fff;
   font-size: 14px;
+  resize: none;
 }
+
 
 button {
   display: block;
